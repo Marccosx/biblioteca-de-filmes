@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center text">
                     <a href="{{ route('home') }}">
-                        <span class="iconify" data-icon="fluent:drawer-play-20-filled" style="width:30px; height:30px; color: #7c77df;"></span>
+                        <span class="iconify" data-icon="fluent:drawer-play-20-filled" style="width:30px; height:30px; color: #9c46e3;"></span>
                     </a>
                 </div>
 
@@ -22,7 +22,7 @@
                             {{ __('Lista de favoritos') }}
                         </div>
                     </x-nav-link>
-                    <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('')">
+                    <x-nav-link href="{{ route('movie') }}" :active="request()->routeIs('movie')">
                         <div class="text-white  hover:text-blue-200">   
                             {{ __('TV Show') }}
                         </div>

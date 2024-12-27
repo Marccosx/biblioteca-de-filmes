@@ -8,7 +8,7 @@ Route::get('/home', function () {
 
 Route::get('/movie', function () {
     return view('movielist.show');
-});
+})->name('movie');
 
 Route::middleware([
     'auth:sanctum',
