@@ -17,6 +17,8 @@
         type="text"
         placeholder="Pesquisar"
         class="pl-10 my-2 py-2 bg-gray-800 text-white rounded-md transition-all duration-300 border focus:outline-none focus:shadow-outline"
+        wire:model="query"
+        wire:keydown.enter="search"
         :class="$wire.isHovered ? 'w-64' : 'opacity-0 w-10 cursor-pointer'"
     />
 </div>

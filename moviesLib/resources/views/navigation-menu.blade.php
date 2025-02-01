@@ -5,26 +5,26 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center text">
-                    <a href="{{ route('home') }}">
+                    <a href="">
                         <span class="iconify" data-icon="fluent:drawer-play-20-filled" style="width:30px; height:30px; color: #9c46e3;"></span>
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
+                    <x-nav-link href="#" :active="request()->routeIs('#')">
                         <div class="text-white  hover:text-blue-200">   
                             {{ __('Dashboard') }}
                         </div>
                     </x-nav-link>
-                    <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('')">
+                    <x-nav-link href="#" :active="request()->routeIs('')">
                         <div class="text-white hover:text-blue-200">   
                             {{ __('Lista de favoritos') }}
                         </div>
                     </x-nav-link>
-                    <x-nav-link href="{{ route('movie') }}" :active="request()->routeIs('movie')">
+                    <x-nav-link href="{{ route('movie.index') }}" :active="request()->routeIs('movie.index')">
                         <div class="text-white  hover:text-blue-200">   
-                            {{ __('TV Show') }}
+                            {{ __('Filmes') }}
                         </div>
                     </x-nav-link>
                 </div>
@@ -155,7 +155,7 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+            <x-responsive-nav-link href="#" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
         </div>

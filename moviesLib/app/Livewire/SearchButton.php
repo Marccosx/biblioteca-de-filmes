@@ -4,13 +4,20 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
+
 class SearchButton extends Component
 {
-    public bool $isHovered = false;
+    public $query;
+    public $isHovered = false;
 
     public function toggleHover($state)
     {
         $this->isHovered = $state;
+    }
+
+    public function search()
+    {
+        return redirect()->route('movie.search', ['query' => $this->query]);
     }
 
     public function render()
